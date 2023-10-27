@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ececec;
+}
+
+.contenedor{
+    padding: 25px 0;
+    width: 90%;
+    max-width: 1800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.subtitulos{
+    color: #a3a000;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.separador-pagina{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient( hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(../img/portadaPrincipal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.linea{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: white;
+    font-style: bold;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+nav > a:hover{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textos-header h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: #fffb00;
+}
+
+.textos-header h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+
+/* Sobre nosotros */
+
+.cont-nuestra-empresa{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-nuestra-empresa{
+    width: 48%;
+}
+
+.parrafos-nuestra-empresa{
+    width: 48%;
+}
+
+.parrafos-nuestra-empresa p{
+    padding: 20px 0px 20px 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Menú de accesos */
+
+.menu-opciones{
+    background-color: #d8d8d8;
+}
+
+.menu-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-menu{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagen-menu > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-menu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background-color: hsla(46, 100%, 49%, 0.5);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-menu img{
+    width: 100px;
+}
+
+.hover-menu p{
+    color: white;
+}
+
+.imagen-menu:hover .hover-menu{
+    transform: scale(1);
+}
+
+/* Calidad */
+
+.parrafos-privilegio p{
+    padding: 0px 100px 20px 100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: #636363;
+    padding: 40px 0 40px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.textos-footer h3{
+    text-align: center;
+    color: #cecece;
+    font-size: 30px;
+}
+
+.textos-footer p{
+    text-align: center;
+    color: #adadad;
+    font-size: 14px;
+}
